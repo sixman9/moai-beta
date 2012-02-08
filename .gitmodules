@@ -1,0 +1,3 @@
+[submodule "samples/Rapanui"]
+	path = samples/Rapanui
+	url = git@github.com:sixman9/rapanui.git
