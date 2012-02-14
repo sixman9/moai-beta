@@ -1,0 +1,26 @@
+Moai SDK for IntelliJ IDEA‬
+‪‬by ‪plandem‬ » Fri Jan 27, 2012 2:41 pm
+Ok, guys and girls. I'm finished my parser/builder for Moai SDK for great free Lua plugin for great free IDE - IntelliJ IDEA.
+- Autocomplete - YES
+- Quickhelp Documentation (Ctrl + Q) - YES
+- External Documentation (Shitft + F1) - YES
+- Quick Navigation Tooltips (Ctrl + Hover Mouse) - YES
+
+You can use it for free, of course 
+
+IntelliJ IDEA official site:
+‪http://www.jetbrains.com/idea/download/index.html‬
+
+Lua plugin official site:
+‪http://bitbucket.org/sylvanaar2/lua-for-idea/‬
+
+Short information about installing SDK:
+‪http://bitbucket.org/sylvanaar2/lua-for-idea/wiki/Installing_a_Custom_API‬
+
+Some useful screencasts for using this plugin that maybe can improve you programming speed (Zen Lua, for example):
+‪http://bitbucket.org/sylvanaar2/lua-for-idea/wiki/Screencast_Collection‬
+http://getmoai.com/forums/download/file.php?id=4&sid=61b81705d21f45d523a587197579795c
+
+ZIP @ http://getmoai.com/forums/download/file.php?id=4&sid=61b81705d21f45d523a587197579795c
+
+Doxygen-lua plugin @ https://github.com/alecchen/doxygen-lua
