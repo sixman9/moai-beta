@@ -3,4 +3,5 @@
 	url = git@github.com:sixman9/rapanui.git
 [submodule "contrib/vcproj2cmake"]
 	path = contrib/vcproj2cmake
-	url = git://vcproj2cmake.git.sourceforge.net/gitroot/vcproj2cmake/vcproj2cmake
+	url = https://sixman9@github.com/sixman9/vcproj2cmake.git
+	#url = git://vcproj2cmake.git.sourceforge.net/gitroot/vcproj2cmake/vcproj2cmake
