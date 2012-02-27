@@ -51,6 +51,11 @@ def read_file(name, normalize = True):
     else:
         f.close()
 
+def f7(seq):
+    seen = set()
+    seen_add = seen.add
+    return [ x for x in seq if x not in seen and not seen_add(x)]
+
 def get_single_value(data, regex):
     """ Return a single regex result. """
 
@@ -263,10 +268,23 @@ for id in projects.keys():
         output += \
             "      'defines': [\n"+\
             "      ],\n"+\
-            "      'include_dirs': [\n"+\
+            "      'include_dirs': [\n"
+
+#Begin - Potential Header directories for GCC '-I' switch - Richard Joseph, 27/02/12
+	rel_paths_no_file = []
+	for path in rel_paths:
+            rel_paths_no_file.append(os.path.dirname(path))
+
+	uniq_list_paths = f7(set(rel_paths_no_file))
+
+        for header_path_dir in uniq_list_paths:
+            output += "        '"+header_path_dir+"',\n" 
+#End - Potential Header directories for GCC '-I' switch          
+        
+	output += \
             "      ],\n"+\
             "      'sources': [\n"
-        
+
         for path in rel_paths:
             output += "        '"+path+"',\n"
             
